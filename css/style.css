@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+body {
+    font-family: 'Inter', sans-serif;
+}
+.animacao {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.line{
+    background-color: black;
+    width: 20px;
+    height: 6px;
+    margin-top: 2px;
+    border-radius: 40px;
+    position: relative;
+    animation:traço-animation 3s linear infinite;
+}
+@keyframes traço-animation {
+    0%{
+         left: -300px;
+         opacity: 0;
+        }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        left: 310px;
+        opacity: 0;
+    }
+}
+
+footer {
+    background: linear-gradient(rgb(95, 95, 95), rgb(0, 0, 0));
+    color: white;
+    padding: 40px 20px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.midias-sociais {
+    margin-bottom: 30px;
+}
+
+.midias-sociais i {
+    font-size: 28px;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.topicos {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+}
+
+.topicos b {
+    color: white;
+    text-decoration: none;
+    margin: 0 90px;
+    font-size: 17px;
+}
+
+.topicos b:hover {
+    color: white;
+}
+
+.responsive-heading-title-text {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-top: 50px;
+}
+
+.responsive-heading-title-text i {
+    font-style: italic;
+}
+  
+#posicao {
+    align-items: center;
+    text-align: center;
+}
+
+.card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+  
+.card {
+    width: 15rem;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0);
+    flex: 1 1 150px;
+    margin: 5px;
+    margin-top: 7px;
+}
+  
+.card-title {
+    text-align: center;
+}
+  
+.card1-deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
